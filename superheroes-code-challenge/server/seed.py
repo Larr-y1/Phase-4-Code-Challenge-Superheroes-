@@ -6,6 +6,7 @@ import random
 fake = Faker()
 
 with app.app_context():
+    print("Seeding Database")
 
     HeroPower.query.delete()
     Hero.query.delete()
